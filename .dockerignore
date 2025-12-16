@@ -1,0 +1,70 @@
+# ==========================
+# Version Control
+# ==========================
+.git
+.gitignore
+.dockerignore
+
+# ==========================
+# Environment Variables (CRITICAL)
+# ==========================
+# Never copy secrets into the image
+.env
+.env.*
+!.env.example
+
+# ==========================
+# Node.js / Frontend
+# ==========================
+# Dependencies will be installed inside the container
+**/node_modules
+**/npm-debug.log
+**/yarn-debug.log
+**/yarn-error.log
+
+# Build artifacts (we build inside Docker or serve source)
+**/build
+**/dist
+**/.next
+
+# ==========================
+# Python / Backend
+# ==========================
+# Virtual environments (we install fresh in Docker)
+**/venv
+**/env
+**/.venv
+
+# Bytecode and cache
+**/__pycache__
+**/*.pyc
+**/*.pyo
+**/*.pyd
+
+# Testing & Coverage
+**/.pytest_cache
+**/.coverage
+**/htmlcov
+
+# ==========================
+# Docker & Orchestration
+# ==========================
+docker-compose.yml
+docker-compose.override.yml
+Dockerfile
+Dockerfile.*
+
+# ==========================
+# IDE & System Files
+# ==========================
+.vscode
+.idea
+**/.DS_Store
+**/Thumbs.db
+
+# ==========================
+# Documentation & Misc
+# ==========================
+README.md
+LICENSE
+docs/

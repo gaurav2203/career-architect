@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  # Node.js Service (Frontend)
+  frontend:
+    build:
+      context: ./frontend  # Directory containing the Node Dockerfile
+      dockerfile: Dockerfile
+    container_name: node_app
+    restart: no
+    ports:
+      - "3000:3000"
+    environment:
+      - RESUME_PARSER_URL=http://localhost:8000 # Adjust variable name as needed
+    depends_on:
+      - resume_parser
+    networks:
+      - app_network
+
+  # Python Service (Backend)
+  resume_parser:
+    build:
+      context: ./backend/resume_parser   # Directory containing the Python Dockerfile
+      dockerfile: Dockerfile
+    container_name: resume_parser
+    restart: no
+    ports:
+      - "8000:8000"
+    environment:
+      # Passes the key from your host .env file to the container
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - FRONTEND_URL=${FRONTEND_URL}
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge

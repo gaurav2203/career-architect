@@ -1,0 +1,106 @@
+{
+    "personalInfo": {
+        "name": "FIRST LAST",
+        "email": "sampleresume@gmail.com",
+        "phone": "(480) 123-5689",
+        "linkedin": "linkedin.com/in/sampleresume",
+        "github": "",
+        "website": ""
+    },
+    "summary": "An analytical and results-driven software engineer with experience in application development, scripting and coding, automation, web application design, product testing and deployment, Ul testing, and requirements gathering. Proven aptitude for implementing innovative solutions to streamline and automate processes, enhance efficiency, improve customer satisfaction, and achieve financial savings.",
+    "skills": [
+        "ReactJS",
+        "AngularJS 1.x",
+        "ExpressJS",
+        "NodeJS",
+        "jQuery",
+        "HTML/CSS",
+        "React Native",
+        "ExponentJS",
+        "JavaScript",
+        "Spring",
+        "Maven",
+        "Java",
+        "MongoDB",
+        "SQL",
+        "Docker",
+        "Tomcat",
+        "Grunt",
+        "Heroku",
+        "CircleCI"
+    ],
+    "experience": [
+        {
+            "role": "Programmer Analyst",
+            "company": "WALMART, INC.",
+            "startMonth": "",
+            "startYear": "2011",
+            "endMonth": "",
+            "endYear": "2016",
+            "details": [
+                "Architected financial services hotline app for 8 countries in Central and South America.",
+                "Implemented benefits hotline app rollout every year for US and Canada serving 1.4 million employees.",
+                "Optimized manual application tuning process with Java to fetch and process data, making process 20x faster.",
+                "Connected user-facing web applications with SQL DBs using Spring REST web services.",
+                "Integrated agent monitoring system, improving call center efficiency by 30%. [Employee of the Month - Dec 2012]"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "degree": "M.S., Computer Science",
+            "school": "UNIVERSITY OF ARIZONA",
+            "startMonth": "",
+            "startYear": "",
+            "endMonth": "",
+            "endYear": "2012"
+        },
+        {
+            "degree": "B.S.B.A., Management Information Systems",
+            "school": "UNIVERSITY OF ARIZONA",
+            "startMonth": "",
+            "startYear": "",
+            "endMonth": "",
+            "endYear": "2011"
+        }
+    ],
+    "projects": [
+        {
+            "name": "PicoShell",
+            "description": "Collaborative coding platform with a linux terminal, code editor, file browser, chat window, and video collection.",
+            "tech": [
+                "ReactJS",
+                "Socket.io",
+                "Docker",
+                "NodeJS",
+                "ExpressJS",
+                "MySQL"
+            ],
+            "link": ""
+        },
+        {
+            "name": "TagMe",
+            "description": "Photo diary and photo organizer that uses photo-recognition APIs to tag and caption photos.",
+            "tech": [
+                "React Native",
+                "ExponentJS",
+                "CircleCI",
+                "Heroku"
+            ],
+            "link": ""
+        },
+        {
+            "name": "Roadtrip Mood Music Generator",
+            "description": "Spotify playlist generator based on time of day and weather forecast of any given roadtrip route.",
+            "tech": [
+                "Spotify API",
+                "OAuth",
+                "PassportJS",
+                "Google Maps",
+                "Accuweather"
+            ],
+            "link": ""
+        }
+    ],
+    "certificates": []
+}
