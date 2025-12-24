@@ -40,6 +40,10 @@ export interface ResumeData {
     link: string;
   }[];
 }
+export interface CoverLetter {
+  resume_data?: ResumeData;
+  job_description?: string;
+}
 
 export enum AppRoute {
   DASHBOARD = 'dashboard',
